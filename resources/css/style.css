@@ -11,25 +11,26 @@ body {
   margin: 0 auto;
 }
 
+.flex {
+  display: flex;
+}
+
 
 /* header styles */
 
   .menu {
-    display: flex;
     justify-content: space-between;
     align-items: center;
     height: 64px;
   }
 
   .logo{
-    display: flex;
     align-items: center;
     height: 32px;
     padding-left: 24px;
   }
 
   header ul{
-    display: flex;
     padding-right: 24px;
   }
 
@@ -40,7 +41,6 @@ body {
 /* banner */
 
   .banner{
-    display: flex;
     background-color: lightgrey;
   }
 
@@ -55,7 +55,6 @@ body {
 
   .banner-content{
     width: 40%;
-    display: flex;
     flex-direction: column;
     justify-content: center;
   }
@@ -81,15 +80,10 @@ body {
     padding: 8px 0;
   }
 
-/* learning */
-
-  .learning{
-    display:flex;
-  }
+/* intro */
 
   .practicing{
     width: 60%;
-    display: flex;
     flex-direction: column;
     padding: 32px 24px;
   }
@@ -115,19 +109,15 @@ body {
   }
 
   .orientation{
-    display: flex;
     width: 40%;
     flex-direction: column;
-    border-left: 1px solid grey;
     padding: 16px 0;
   }
 
   .item{
-    display: flex;
     align-content: flex-end;
     padding: 16px;
     align-items: center;
-    border: 1px solid grey;
   }
 
   .item img{
@@ -154,4 +144,48 @@ body {
   .item-content span{
     font-size: .9rem;
     color: navy;
+  }
+
+  /* Start learning */
+
+  .learning{
+    background: lightgrey;
+  }
+
+  .learning h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.2rem;
+    padding: 32px 0;
+  }
+
+  .studies{
+    padding: 0 56px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .study {
+    width: 30%;
+    background-color: white;
+    margin: 0 16px 32px 16px;
+  }
+
+  .study img{
+    height: auto;
+    width: 100%;
+  }
+
+  .study-content h3{
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  .study-content h4{
+    padding: 8px 0;
+    text-transform: uppercase;
+  }
+
+  .study-content {
+    padding: 16px 24px 24px 16px;
   }
