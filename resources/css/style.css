@@ -15,6 +15,13 @@ body {
   display: flex;
 }
 
+h2{
+  text-align: center;
+  font-weight: bold;
+  font-size: 2.2rem;
+  padding: 32px 0;
+}
+
 
 /* header styles */
 
@@ -30,11 +37,11 @@ body {
     padding-left: 24px;
   }
 
-  header ul{
+  ul{
     padding-right: 24px;
   }
 
-  header li {
+  li {
     padding-left: 16px;
   }
 
@@ -62,7 +69,9 @@ body {
   .banner-content h2{
     font-weight: bold;
     font-size: 3rem;
+    padding: 0;
     padding-right: 100px;
+    text-align: left;
   }
 
   .banner-content h3{
@@ -102,7 +111,9 @@ body {
   .practicing-content h2{
     font-weight: bold;
     font-size: 2.2rem;
-  }
+    text-align: left;
+    padding: 0;
+    }
 
   .practicing img{
     width: 100%;
@@ -152,13 +163,6 @@ body {
     background: lightgrey;
   }
 
-  .learning h2{
-    text-align: center;
-    font-weight: bold;
-    font-size: 2.2rem;
-    padding: 32px 0;
-  }
-
   .studies{
     padding: 0 56px;
     justify-content: space-between;
@@ -188,4 +192,41 @@ body {
 
   .study-content {
     padding: 16px 24px 24px 16px;
+  }
+
+  /* Thesis exhibit */
+
+  .thesis .practicing{
+    padding-top: 0;
+  }
+
+  .thesis .practicing-content{
+    padding-top: 24px;
+  }
+
+  .thesis .practicing-content p{
+    padding-top: 8px;
+    padding-bottom: 32px;
+  }
+
+  .thesis .orientation{
+    padding-top: 0;
+  }
+
+  .item-grey {
+    background-color: lightgrey;
+  }
+
+  .practicing video{
+    width: 100%;
+  }
+
+  footer{
+    justify-content: space-between;
+    border-top: 1px solid lightgrey;
+    padding:16px 0;
+  }
+
+  footer span{
+    padding-left: 24px;
   }
