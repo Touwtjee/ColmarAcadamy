@@ -225,6 +225,8 @@ h3{
     width: 100%;
   }
 
+  /* Footer */
+
   footer{
     justify-content: space-between;
     border-top: 1px solid lightgrey;
@@ -237,6 +239,8 @@ h3{
 
   @media only screen and (max-width: 1080px){
 
+    /* Banner */
+
     .banner-content h2{
       font-size: 2.5rem;
       padding-right: 20px;
@@ -246,6 +250,8 @@ h3{
       font-size: 1.2rem;
       padding-right: 20px;
     }
+
+    /*Learning */
 
     .studies{
       justify-content: center;
@@ -258,9 +264,13 @@ h3{
 
   @media only screen and (max-width: 750px){
 
+    /* Banner */
+
     .banner-content h2{
       font-size: 2.3rem;
     }
+
+    /* Intro */
 
     .mixed{
       flex-direction: column;
@@ -276,12 +286,16 @@ h3{
       background-color: lightgrey;
     }
 
+    /*Learning */
+
     .study{
-      width: 80%;
+      width: 90%;
     }
   }
 
   @media only screen and (max-width: 655px){
+
+    /* Banner */
 
     .banner{
       flex-direction: column;
@@ -311,9 +325,12 @@ h3{
     .button{
       width: 100%;
     }
+
   }
 
   @media only screen and (max-width: 550px){
+
+    /* Header */
 
     header h1{
       height: 64px;
@@ -334,8 +351,68 @@ h3{
       justify-content: space-between;
     }
 
+    /* intro */
+
+    .left{
+      width: 100%;
+      padding: 0;
+    }
+
+    .left-content {
+      display: none;
+    }
+
     .intro .left{
       display: none;
     }
+
+    .right{
+      width: 100%;
+      padding-top: 0;
+    }
+
+    .item {
+      flex-direction: column;
+      background-color: white;
+    }
+
+    .item img {
+      width: 100%;
+    }
+
+    .item-content{
+      width: 100%;
+      padding-top: 64px;
+    }
+
+    /* Learning */
+
+    .learning {
+      background-color: white;
+    }
+
+    .studies {
+      padding: 0;
+    }
+
+    .study{
+      width: 100%;
+      margin: 0 16px 8px 16px;
+    }
+
+    .study-content{
+      background-color: lightgrey;
+      padding: 0;
+    }
+
+    .study-content h3{
+      padding: 16px 0 24px 16px;
+    }
+
+    .thesis .right{
+      display: none;
+    }
+
+
 
   }
