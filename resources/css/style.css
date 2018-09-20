@@ -49,6 +49,10 @@ h3{
     padding-left: 16px;
   }
 
+  .mobile{
+    display: none;
+  }
+
 /* banner */
 
   .banner{
@@ -233,7 +237,13 @@ h3{
 
   @media only screen and (max-width: 1080px){
 
-    .banner-content h2, h3{
+    .banner-content h2{
+      font-size: 2.5rem;
+      padding-right: 20px;
+    }
+
+    .banner-content h3{
+      font-size: 1.2rem;
       padding-right: 20px;
     }
 
@@ -246,10 +256,10 @@ h3{
       }
     }
 
-  @media only screen and (max-width: 800px){
+  @media only screen and (max-width: 750px){
 
-    .banner h2{
-      font-size: 2rem;
+    .banner-content h2{
+      font-size: 2.3rem;
     }
 
     .mixed{
@@ -264,6 +274,10 @@ h3{
     .item {
       margin-bottom: 16px;
       background-color: lightgrey;
+    }
+
+    .study{
+      width: 80%;
     }
   }
 
@@ -297,4 +311,31 @@ h3{
     .button{
       width: 100%;
     }
+  }
+
+  @media only screen and (max-width: 550px){
+
+    header h1{
+      height: 64px;
+      display: none;
+    }
+
+    .desktop{
+      display: none;
+    }
+
+    .mobile{
+      display: inline;
+    }
+
+    .logo {
+      width: 100%;
+      padding: 0 24px;
+      justify-content: space-between;
+    }
+
+    .intro .left{
+      display: none;
+    }
+
   }
