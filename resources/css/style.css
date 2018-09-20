@@ -7,7 +7,7 @@ body {
 }
 
 .container{
-  width: 1230px;
+  max-width: 1230px;
   margin: 0 auto;
 }
 
@@ -20,6 +20,10 @@ h2{
   font-weight: bold;
   font-size: 2.2rem;
   padding: 32px 0;
+}
+
+h3{
+  font-weight: bold;
 }
 
 
@@ -67,17 +71,14 @@ h2{
   }
 
   .banner-content h2{
-    font-weight: bold;
     font-size: 3rem;
-    padding: 0;
-    padding-right: 100px;
+    padding: 0 80px 0 0;
     text-align: left;
   }
 
   .banner-content h3{
-    font-weight: bold;
     font-size: 1.4rem;
-    padding: 30px 200px 30px 0;
+    padding: 30px 80px 30px 0;
 
   }
 
@@ -91,35 +92,32 @@ h2{
 
 /* intro */
 
-  .practicing{
+  .left{
     width: 60%;
     flex-direction: column;
     padding: 32px 24px;
   }
 
-  .practicing-content{
+  .left-content{
     padding-top: 32px;
   }
 
-  .practicing-content p{
+  .left-content p{
     padding-top: 24px;
-    padding-bottom: 32px;
     line-height: 1.5;
-
   }
 
-  .practicing-content h2{
-    font-weight: bold;
+  .left-content h2{
     font-size: 2.2rem;
     text-align: left;
     padding: 0;
     }
 
-  .practicing img{
+  .left img{
     width: 100%;
   }
 
-  .orientation{
+  .right{
     width: 40%;
     flex-direction: column;
     padding: 16px 0;
@@ -143,7 +141,6 @@ h2{
 
   .item-content h3{
     font-size: 1.2rem;
-    font-weight: bold;
   }
 
   .item-content h4{
@@ -161,6 +158,7 @@ h2{
 
   .learning{
     background: lightgrey;
+    flex-direction: column;
   }
 
   .studies{
@@ -171,18 +169,25 @@ h2{
 
   .study {
     width: 30%;
+    display: flex;
+    flex-direction: column;
     background-color: white;
     margin: 0 16px 32px 16px;
   }
 
+  .study-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .study img{
     height: auto;
-    width: 100%;
+    max-width: 100%;
   }
 
   .study-content h3{
     font-size: 1.2rem;
-    font-weight: bold;
   }
 
   .study-content h4{
@@ -196,20 +201,15 @@ h2{
 
   /* Thesis exhibit */
 
-  .thesis .practicing{
+  .thesis .left{
     padding-top: 0;
   }
 
-  .thesis .practicing-content{
-    padding-top: 24px;
-  }
-
-  .thesis .practicing-content p{
+  .thesis .left-content p{
     padding-top: 8px;
-    padding-bottom: 32px;
   }
 
-  .thesis .orientation{
+  .thesis .right{
     padding-top: 0;
   }
 
@@ -217,7 +217,7 @@ h2{
     background-color: lightgrey;
   }
 
-  .practicing video{
+  .left video{
     width: 100%;
   }
 
@@ -229,4 +229,72 @@ h2{
 
   footer span{
     padding-left: 24px;
+  }
+
+  @media only screen and (max-width: 1080px){
+
+    .banner-content h2, h3{
+      padding-right: 20px;
+    }
+
+    .studies{
+      justify-content: center;
+    }
+
+    .study{
+      width: 45%;
+      }
+    }
+
+  @media only screen and (max-width: 800px){
+
+    .banner h2{
+      font-size: 2rem;
+    }
+
+    .mixed{
+      flex-direction: column;
+    }
+
+    .left, .right{
+      width: 75%;
+      margin: 0 auto;
+    }
+
+    .item {
+      margin-bottom: 16px;
+      background-color: lightgrey;
+    }
+  }
+
+  @media only screen and (max-width: 655px){
+
+    .banner{
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .banner-image{
+      width: 100%;
+      margin: 0 auto;
+      padding: 0;
+    }
+
+    .banner-content{
+      width: 80%;
+      margin: 0 auto;
+      padding: 32px 16px;
+    }
+
+    .banner-content h2{
+      padding:0;
+    }
+
+    .banner-content h3{
+      padding: 32px 0 24px 0;
+    }
+
+    .button{
+      width: 100%;
+    }
   }

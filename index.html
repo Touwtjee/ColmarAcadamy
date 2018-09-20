@@ -9,8 +9,7 @@
   </head>
   <body>
 
-    <header>
-      <section class="container flex menu">
+    <header class="container flex menu" id="header">
         <div class="logo flex">
           <img src="./resources/images/ic-logo.svg" alt="Colmar Acadamy Logo">
           <h1>COLMAR ACADAMY</h1>
@@ -23,159 +22,171 @@
             <li>Sign in</li>
           </ul>
         </nav>
-      </section>
     </header>
 
     <!-- banner -->
-    <section class="container flex banner">
-      <div class="banner-image">
-        <img src="./resources/images/banner.jpg" alt="">
-      </div>
-      <div class="flex banner-content">
-        <h2>Learn something new everyday</h2>
-        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-        <div class="button">
-          <span>Start here</span>
+    <main class="container">
+      <section class="flex banner" id="banner">
+        <div class="banner-image">
+          <img src="./resources/images/banner.jpg" alt="">
         </div>
-      </div>
-    </section> <!-- banner -->
+        <div class="flex banner-content">
+          <h2>Learn something new everyday</h2>
+          <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+          <div class="button">
+            <span>Start here</span>
+          </div>
+        </div>
+      </section> <!-- banner -->
 
     <!-- Intro -->
-    <section class="container flex">
-      <div class="flex practicing">
-        <img src="./resources/images/information-main.jpg" alt="">
-        <div class="practicing-content">
-          <h2>It doesn't hurt to keep practicing</h2>
-          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident. Fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
-          <span>Emanuel, Sr Strategist at Hiring.com</span>
-        </div>
-      </div>
-
-      <div class="flex orientation">
-        <div class="flex item">
-          <img src="./resources/images/information-orientation.jpg" alt="">
-          <div class="item-content">
-            <h3>Orientation date</h3>
-            <h4>dates</h4>
-            <span>Read more</span>
+      <section class="flex mixed" id="intro">
+        <div class="flex left">
+          <img src="./resources/images/information-main.jpg" alt="">
+          <div class="left-content">
+            <h2>It doesn't hurt to keep practicing</h2>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident. Fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+            <p>Emanuel, Sr Strategist at Hiring.com</p>
           </div>
         </div>
 
-        <div class="flex item">
-          <img src="./resources/images/information-campus.jpg" alt="">
-          <div class="item-content">
-            <h3>Our campus</h3>
-            <h4>Find which campus is close by you</h4>
-            <span>Read more</span>
-          </div>
-        </div>
-
-        <div class=" flex item">
-          <img src="./resources/images/information-guest-lecture.jpg" alt="">
-          <div class="item-content">
-            <h3>Our guest lecture</h3>
-            <h4>Join a keynote with Olive Sack about music in medical treatment</h4>
-            <span>Read more</span>
-          </div>
-        </div>
-
-      </div>
-    </section> <!-- Intro -->
-
-
-    <!-- Start learning -->
-    <section class="container learning">
-      <h2>Start Learning</h2>
-      <div class="flex studies">
-
-        <div class="study">
-          <img src="./resources/images/course-software.jpg" alt="">
-          <div class="study-content">
-            <h3>Software Engineering</h3>
-            <h4>courses</h4>
-            <p>Web Development, Mobile Development, iOT, APIs</p>
-          </div>
-        </div>
-
-        <div class="study">
-          <img src="./resources/images/course-computer-art.jpg" alt="">
-          <div class="study-content">
-            <h3>Computer art</h3>
-            <h4>courses</h4>
-            <p>Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
-          </div>
-        </div>
-
-        <div class="study">
-          <img src="./resources/images/course-design.jpg" alt="">
-          <div class="study-content">
-            <h3>Design</h3>
-            <h4>courses</h4>
-            <p>User Experience Design, User Research, Visual Design</p>
-          </div>
-        </div>
-
-        <div class="study">
-          <img src="./resources/images/course-data.jpg" alt="">
-          <div class="study-content">
-            <h3>Data</h3>
-            <h4>courses</h4>
-            <p>Data Science, Big Data, SQL, Data Visualization</p>
-          </div>
-        </div>
-
-        <div class="study">
-          <img src="./resources/images/course-business.jpg" alt="">
-          <div class="study-content">
-            <h3>Business</h3>
-            <h4>courses</h4>
-            <p>Product Development, Business Development, Startup</p>
-          </div>
-        </div>
-
-        <div class="study">
-          <img src="./resources/images/course-marketing.jpg" alt="">
-          <div class="study-content">
-            <h3>Marketing</h3>
-            <h4>courses</h4>
-            <p>Analytics, Content Marketing, Mobile Marketing</p>
-          </div>
-        </div>
-    </section> <!-- Start learning -->
-
-    <!-- Thesis exhibit -->
-    <section class="container thesis">
-      <h2>Thesis exhibit</h2>
-      <div class="flex">
-        <div class="flex practicing">
-          <video controls><source src="./resources/videos/thesis.mp4" type= "video/mp4">Your browser does not support the video tag</video>
-          <div class="practicing-content">
-            <h2>Reimagine urban</h2>
-            <p>Aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident. Fugiat nulla pariatur. Occaecat cupidatat non proident. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
-          </div>
-        </div>
-
-        <div class="flex orientation">
-          <div class="flex item item-grey">
-            <img src="./resources/images/thesis-fisma.jpg" alt="">
+        <div class="flex right">
+          <div class="flex item">
+            <img src="./resources/images/information-orientation.jpg" alt="">
             <div class="item-content">
-              <h3>Fisma: Design and prototype</h3>
-              <h4>Designer showcase of new prototype product</h4>
+              <h3>Orientation date</h3>
+              <h4>dates</h4>
+              <span>Read more</span>
             </div>
           </div>
 
           <div class="flex item">
-            <img src="./resources/images/thesis-now-and-then.jpg" alt="">
+            <img src="./resources/images/information-campus.jpg" alt="">
             <div class="item-content">
-              <h3>Now and then</h3>
-              <h4>Research study about New York</h4>
+              <h3>Our campus</h3>
+              <h4>Find which campus is close by you</h4>
+              <span>Read more</span>
+            </div>
+          </div>
+
+          <div class=" flex item">
+            <img src="./resources/images/information-guest-lecture.jpg" alt="">
+            <div class="item-content">
+              <h3>Our guest lecture</h3>
+              <h4>Join a keynote with Olive Sack about music in medical treatment</h4>
+              <span>Read more</span>
+            </div>
+          </div>
+
+        </div>
+      </section> <!-- Intro -->
+
+
+      <!-- Start learning -->
+      <section class="flex learning" id="learning">
+        <h2>Start Learning</h2>
+        <div class="flex studies">
+          <div class="study">
+            <div class="study-image">
+              <img src="./resources/images/course-software.jpg" alt="">
+            </div>
+            <div class="study-content">
+              <h3>Software Engineering</h3>
+              <h4>courses</h4>
+              <p>Web Development, Mobile Development, iOT, APIs</p>
+            </div>
+          </div>
+
+          <div class="study">
+            <div class="study-image">
+              <img src="./resources/images/course-computer-art.jpg" alt="">
+            </div>
+            <div class="study-content">
+              <h3>Computer art</h3>
+              <h4>courses</h4>
+              <p>Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
+            </div>
+          </div>
+
+          <div class="study">
+            <div class="study-image">
+              <img src="./resources/images/course-design.jpg" alt="">
+            </div>
+            <div class="study-content">
+              <h3>Design</h3>
+              <h4>courses</h4>
+              <p>User Experience Design, User Research, Visual Design</p>
+            </div>
+          </div>
+
+          <div class="study">
+            <div class="study-image">
+              <img src="./resources/images/course-data.jpg" alt="">
+            </div>
+            <div class="study-content">
+              <h3>Data</h3>
+              <h4>courses</h4>
+              <p>Data Science, Big Data, SQL, Data Visualization</p>
+            </div>
+          </div>
+
+          <div class="study">
+            <div class="study-image">
+              <img src="./resources/images/course-business.jpg" alt="">
+            </div>
+            <div class="study-content">
+              <h3>Business</h3>
+              <h4>courses</h4>
+              <p>Product Development, Business Development, Startup</p>
+            </div>
+          </div>
+
+          <div class="study">
+            <div class="study-image">
+              <img src="./resources/images/course-marketing.jpg" alt="">
+            </div>
+            <div class="study-content">
+              <h3>Marketing</h3>
+              <h4>courses</h4>
+              <p>Analytics, Content Marketing, Mobile Marketing</p>
+            </div>
+          </div>
+      </section> <!-- Start learning -->
+
+      <!-- Thesis exhibit -->
+      <section class="thesis" id="thesis">
+        <h2>Thesis exhibit</h2>
+        <div class="flex mixed">
+          <div class="flex left">
+            <video controls><source src="./resources/videos/thesis.mp4" type= "video/mp4">Your browser does not support the video tag</video>
+            <div class="left-content">
+              <h2>Reimagine urban</h2>
+              <p>Aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident. Fugiat nulla pariatur. Occaecat cupidatat non proident. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+            </div>
+          </div>
+
+          <div class="flex right">
+            <div class="flex item item-grey">
+              <img src="./resources/images/thesis-fisma.jpg" alt="">
+              <div class="item-content">
+                <h3>Fisma: Design and prototype</h3>
+                <h4>Designer showcase of new prototype product</h4>
+              </div>
+            </div>
+
+            <div class="flex item">
+              <img src="./resources/images/thesis-now-and-then.jpg" alt="">
+              <div class="item-content">
+                <h3>Now and then</h3>
+                <h4>Research study about New York</h4>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section> <!-- Thesis exhibit -->
+      </section> <!-- Thesis exhibit -->
+    </main>
 
-    <footer class=" container flex">
+    <footer class="container flex">
       <span>&copy; Colmar Acadamy. All rights reserved</span>
       <nav class="desktop">
         <ul class="flex">
