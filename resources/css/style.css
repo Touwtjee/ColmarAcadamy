@@ -1,9 +1,15 @@
 /* universal styles */
 
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700|Raleway:400,400i,700');
+
+:root{
+  --main-color: #9EFFF5;
+}
+
 html,
 body {
-  font-family: "Calibri";
-  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
 }
 
 .container{
@@ -15,15 +21,28 @@ body {
   display: flex;
 }
 
+.name{
+  font-style: italic;
+}
+
+.button {
+  background-color: var(--main-color);
+  padding: .5rem;
+}
+
 h2{
+  font-family: 'Libre Baskerville', serif;
   text-align: center;
-  font-weight: bold;
   font-size: 2.2rem;
   padding: 32px 0;
 }
 
-h3{
-  font-weight: bold;
+h3 {
+  font-family: 'Libre Baskerville', serif;
+}
+
+p{
+  line-height: 1.5;
 }
 
 
@@ -56,7 +75,7 @@ h3{
 /* banner */
 
   .banner{
-    background-color: lightgrey;
+    background-color: var(--main-color);
   }
 
   .banner-image{
@@ -80,18 +99,16 @@ h3{
     text-align: left;
   }
 
-  .banner-content h3{
+  .banner-content p{
     font-size: 1.4rem;
     padding: 30px 80px 30px 0;
 
   }
 
-  .button{
-    color: white;
+  .banner-content .button{
     text-align: center;
     width: 70%;
-    background-color: grey;
-    padding: 8px 0;
+    background-color: white;
   }
 
 /* intro */
@@ -147,21 +164,21 @@ h3{
     font-size: 1.2rem;
   }
 
-  .item-content h4{
+  .item-content p{
     font-size: .9rem;
     padding: 8px 0;
     line-height: 1.5;
+    margin-bottom: .5rem;
   }
 
   .item-content span{
     font-size: .9rem;
-    color: navy;
   }
 
   /* Start learning */
 
   .learning{
-    background: lightgrey;
+    background: var(--main-color);
     flex-direction: column;
   }
 
@@ -196,6 +213,9 @@ h3{
 
   .study-content h4{
     padding: 8px 0;
+    line-height: 1.5;
+    font-weight: bold;
+    font-size: .8rem;
     text-transform: uppercase;
   }
 
@@ -218,7 +238,7 @@ h3{
   }
 
   .item-grey {
-    background-color: lightgrey;
+    background-color: var(--main-color);
   }
 
   .left video{
@@ -227,9 +247,27 @@ h3{
 
   /* Footer */
 
-  footer{
+  .footer{
     justify-content: space-between;
-    border-top: 1px solid lightgrey;
+  }
+
+  .social-media {
+    text-align: center;
+  }
+
+  .social {
+    justify-content: center;
+    align-items: center;
+    padding:16px 0;
+  }
+
+  .fab {
+    color: var(--main-color);
+    padding-left: 16px;
+  }
+
+  footer{
+    border-top: 1px solid var(--main-color);
     padding:16px 0;
   }
 
@@ -264,10 +302,19 @@ h3{
 
   @media only screen and (max-width: 750px){
 
+    .button{
+      background-color: white;
+
+    }
+
     /* Banner */
 
     .banner-content h2{
-      font-size: 2.3rem;
+      font-size: 2rem;
+    }
+
+    .banner-content p{
+      padding: 10px 80px 10px 0;
     }
 
     /* Intro */
@@ -283,7 +330,7 @@ h3{
 
     .item {
       margin-bottom: 16px;
-      background-color: lightgrey;
+      background-color: var(--main-color);
     }
 
     /*Learning */
@@ -322,13 +369,13 @@ h3{
       padding: 32px 0 24px 0;
     }
 
-    .button{
+    .banner-content .button{
       width: 100%;
     }
 
   }
 
-  @media only screen and (max-width: 550px){
+  @media only screen and (max-width: 583px){
 
     /* Header */
 
@@ -382,7 +429,7 @@ h3{
 
     .item-content{
       width: 100%;
-      padding-top: 64px;
+      padding-top: 32px;
     }
 
     /* Learning */
@@ -401,7 +448,7 @@ h3{
     }
 
     .study-content{
-      background-color: lightgrey;
+      background-color: var(--main-color);
       padding: 0;
     }
 
@@ -409,10 +456,20 @@ h3{
       padding: 16px 0 24px 16px;
     }
 
+    .button {
+      background-color: var(--main-color);
+    }
+
+    .thesis{
+      padding-top: 32px;
+    }
+
     .thesis .right{
       display: none;
     }
 
-
+    .thesis .left{
+      padding-bottom: 24px;
+    }
 
   }
