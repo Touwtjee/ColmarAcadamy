@@ -40,10 +40,12 @@ h2{
   text-align: center;
   font-size: 2.2rem;
   padding: 32px 0;
+  font-weight: bold;
 }
 
 h3 {
   font-family: 'Libre Baskerville', serif;
+  font-weight: bold;
 }
 
 p{
