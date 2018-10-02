@@ -10,7 +10,7 @@
 html,
 body {
   font-family: 'Raleway', sans-serif;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .container{
@@ -27,6 +27,7 @@ body {
 }
 
 .button {
+  text-transform: uppercase;
   cursor: pointer;
   border-radius: 4px;
   background-color: var(--main-color);
@@ -72,7 +73,6 @@ main{
   padding-top: 64px;
 }
 
-
 /* header styles */
 
   header{
@@ -80,6 +80,7 @@ main{
     background-color: white;
     width: 100%;
     z-index: 10;
+    border-bottom: 1px solid var(--hover-color);
   }
 
   .menu {
@@ -99,6 +100,7 @@ main{
   }
 
   li {
+    font-size: .9rem;
     padding-left: 16px;
   }
 
@@ -330,11 +332,11 @@ main{
     /* Banner */
 
     .banner-content h2{
-      font-size: 2.5rem;
+      font-size: 2.3rem;
       padding-right: 20px;
     }
 
-    .banner-content h3{
+    .banner-content p{
       font-size: 1.2rem;
       padding-right: 20px;
     }
@@ -346,7 +348,7 @@ main{
     }
 
     .study{
-      width: 40%;
+      width: 44%;
       }
     }
 
@@ -354,16 +356,16 @@ main{
 
     .button{
       background-color: white;
-
     }
 
     /* Banner */
 
     .banner-content h2{
-      font-size: 2rem;
+      font-size: 1.8rem;
     }
 
     .banner-content p{
+      font-size: 1.1rem;
       padding: 10px 80px 10px 0;
     }
 
@@ -387,6 +389,10 @@ main{
 
     .study{
       width: 90%;
+    }
+
+    .studies {
+      padding: 0 28px;
     }
 
   }
@@ -414,9 +420,10 @@ main{
 
     .banner-content h2{
       padding:0;
+      font-size: 1.6rem;
     }
 
-    .banner-content h3{
+    .banner-content p{
       padding: 32px 0 24px 0;
     }
 
@@ -481,7 +488,7 @@ main{
 
     .item-content{
       width: 100%;
-      padding-top: 32px;
+      padding: 32px 0 20px 20px;
     }
 
     /* Learning */
