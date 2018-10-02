@@ -3,8 +3,8 @@
 @import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700|Raleway:400,400i,700');
 
 :root{
-  --main-color: #9EFFF5;
-  --hover-color: #FFC4FD;
+  --main-color: #99ffcc;
+  --hover-color: #99ccff;
 }
 
 html,
@@ -27,12 +27,22 @@ body {
 }
 
 .button {
+  cursor: pointer;
+  border-radius: 4px;
   background-color: var(--main-color);
   padding: .5rem;
 }
 
 .button:hover{
+  color: white;
   background-color: var(--hover-color);
+  transition: .4s ease all;
+}
+
+.fab:hover{
+  cursor: pointer;
+  color: var(--hover-color);
+  transition: .3s ease all;
 }
 
 h2{
@@ -50,6 +60,12 @@ h3 {
 
 p{
   line-height: 1.5;
+}
+
+ul li:hover{
+  font-weight: bold;
+  color: var(--hover-color);
+  transition: .3s ease all;
 }
 
 
@@ -87,7 +103,8 @@ p{
 /* banner */
 
   .banner{
-    background-color: var(--main-color);
+    /* background-color: var(--main-color); */
+    background-image: linear-gradient(to left top, rgba(153, 255, 204, 0.5), rgba(255, 255, 204, 0.35));
   }
 
   .banner-image{
@@ -121,6 +138,12 @@ p{
     text-align: center;
     width: 70%;
     background-color: white;
+  }
+
+  .banner-content .button:hover{
+    background-color: var(--hover-color);
+    color: white;
+    transition: .4s ease all;
   }
 
 /* intro */
@@ -190,7 +213,7 @@ p{
   /* Start learning */
 
   .learning{
-    background: var(--main-color);
+    background-image: linear-gradient(to left top, rgba(153, 255, 204, 0.5), rgba(255, 255, 204, 0.35));
     flex-direction: column;
   }
 
@@ -250,7 +273,7 @@ p{
   }
 
   .item-grey {
-    background-color: var(--main-color);
+    background-image: linear-gradient(to left top, rgba(153, 255, 204, 0.5), rgba(255, 255, 204, 0.35));
   }
 
   .left video{
@@ -346,7 +369,7 @@ p{
 
     .item {
       margin-bottom: 16px;
-      background-color: var(--main-color);
+        background-image: linear-gradient(to left top, rgba(153, 255, 204, 0.5), rgba(255, 255, 204, 0.35));
     }
 
     /*Learning */
@@ -432,6 +455,7 @@ p{
 
     .right{
       width: 100%;
+      margin-top: 20px;
       padding-top: 0;
     }
 
@@ -453,6 +477,7 @@ p{
 
     .learning {
       background-color: white;
+      background-image: none;
     }
 
     .studies {
@@ -465,16 +490,12 @@ p{
     }
 
     .study-content{
-      background-color: var(--main-color);
+      background-image: linear-gradient(to left top, rgba(153, 255, 204, 0.5), rgba(255, 255, 204, 0.35));
       padding: 0;
     }
 
     .study-content h3{
       padding: 16px 0 24px 16px;
-    }
-
-    .button {
-      background-color: var(--main-color);
     }
 
     .thesis{
