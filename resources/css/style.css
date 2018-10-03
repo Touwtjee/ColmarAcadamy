@@ -3,8 +3,8 @@
 @import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700|Raleway:400,400i,700');
 
 :root{
-  --main-color: #FF5496;
-  --hover-color: #005EFF;
+  --main-color: #005EFF;
+  --hover-color: #FF5496;
 }
 
 html,
