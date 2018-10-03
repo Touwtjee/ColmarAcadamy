@@ -3,8 +3,8 @@
 @import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700|Raleway:400,400i,700');
 
 :root{
-  --main-color: #99ffcc;
-  --hover-color: #99ccff;
+  --main-color: #FF5496;
+  --hover-color: #005EFF;
 }
 
 html,
@@ -117,7 +117,7 @@ main{
 
   .banner{
     /* background-color: var(--main-color); */
-    background-image: linear-gradient(to left top, rgba(153, 255, 204, 0.5), rgba(255, 255, 204, 0.35));
+    background-image: linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35));
   }
 
   .banner-image{
@@ -226,7 +226,7 @@ main{
   /* Start learning */
 
   .learning{
-    background-image: linear-gradient(to left top, rgba(153, 255, 204, 0.5), rgba(255, 255, 204, 0.35));
+    background-image: linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35));
     flex-direction: column;
   }
 
@@ -286,7 +286,7 @@ main{
   }
 
   .item-grey {
-    background-image: linear-gradient(to left top, rgba(153, 255, 204, 0.5), rgba(255, 255, 204, 0.35));
+    background-image: linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35));
   }
 
   .left video{
@@ -382,7 +382,7 @@ main{
 
     .item {
       margin-bottom: 16px;
-        background-image: linear-gradient(to left top, rgba(153, 255, 204, 0.5), rgba(255, 255, 204, 0.35));
+        background-image: linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35));
     }
 
     /*Learning */
@@ -508,7 +508,7 @@ main{
     }
 
     .study-content{
-      background-image: linear-gradient(to left top, rgba(153, 255, 204, 0.5), rgba(255, 255, 204, 0.35));
+      background-image: linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35));
       padding: 0;
     }
 
